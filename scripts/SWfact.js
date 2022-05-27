@@ -12,7 +12,7 @@ async function factGrap(url) {
 function addSite(data) {
     result = data;
     const outputElement = document.querySelector("#fact");
-    outputElement.innerHTML = data;
+    outputElement.textContent = data;
     console.log("fact: ", result);
 }
 factGrap(url);
