@@ -28,6 +28,7 @@ function shipToElement(list) {
     delete (list.url)
     delete (list.created)
     delete (list.edited)
+    delete (list.pilots)
     for (x in list) { 
         x_ = capitalizeFirstLetter(x);  
         text += "<li>" + x_ + ": " + list[x] + "</li>";
